@@ -39,9 +39,7 @@ services:
     image: mysql:8.0
     container_name: "db_cont"
     environment:
-      - MYSQL_ROOT_PASSWORD=root
       - MYSQL_DATABASE=test_db
-      - MYSQL_USER=root
       - MYSQL_PASSWORD=root
     volumes:
       - ./data/mysql/db:/var/lib/mysql
