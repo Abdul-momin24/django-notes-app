@@ -40,9 +40,7 @@ services:
     container_name: "db_cont"
     environment:
       - MYSQL_DATABASE=test_db
-      # -MYSQL_ROOT_USER = root
-      # - MYSQL_USER_PASSWORD= password
-      - MYSQL_PASSWORD=root
+      - MYSQL_ROOT_PASSWORD=root
     volumes:
       - ./data/mysql/db:/var/lib/mysql
     healthcheck:
